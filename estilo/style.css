@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header, footer{
+    background-color: white;
+    background-image: linear-gradient(to bottom, rgba(146, 31, 31, 0.63), transparent);
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; - essa transforma tudo em maiúsculas, linearmente*/
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;    
+}
+
+.gradient{
+    /*background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);*/
+    /*background-image: radial-gradient(to right, white, transparent, white);*/
+    background: radial-gradient(ellipse at top, rgb(139, 66, 64), transparent),
+            radial-gradient(ellipse at bottom, rgb(0, 0, 0), transparent);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+}
+
+header > p{
+    padding-bottom: 50px;
+    color: rgb(179, 76, 76);
+    /*font-size: 2vw;*/
+}
+
+header a, footer a{ /*fica como exemplo de aplicação em mais de uma box*/
+    color: rgb(179, 76, 76);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{ /*mesma coisa do select anterior*/
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.normal > p{
+    width: 60%;
+    /*text-align: justify;*/
+}
+
+section.imagem{
+    /*background-color: rgb(51, 51, 51);*/
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+
+    /*background: radial-gradient(ellipse at top, white, transparent),
+    radial-gradient(ellipse at bottom, gray, transparent);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;*/
+
+    /* Adicionado: */
+    /*-webkit-text-fill-color: transparent;*/
+}
+
+section.imagem > p{
+    /*display: inline-block;*/
+    width: 60%;
+    background-image: linear-gradient(to right, rgba(146, 31, 31, 0.63), transparent);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    /*text-align: justify;*/
+    /*color: gray;*/
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: center center;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: center center;
+}
+
+footer{
+    padding: 10px;
+    /*font-size: 2vw;*/
+}
