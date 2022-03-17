@@ -33,7 +33,7 @@ header > h1{
     /*text-transform: uppercase; - essa transforma tudo em maiúsculas, linearmente*/
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 10vw;    
+    font-size: 9vw;    
 }
 
 .gradient{
